@@ -1,0 +1,17 @@
+.header {
+  height: 100px;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+.header .header_title {
+  margin: auto;
+  font-size: 30px;
+
+}
+
+.header .header_side {
+  float: right;
+  margin: auto 0;
+
+}

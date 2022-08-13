@@ -1,0 +1,13 @@
+.form_container {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 30px auto;
+
+
+}
+
+.form_input {
+  border-radius: 10px;
+  padding: 10px;
+}
