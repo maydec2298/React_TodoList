@@ -1,9 +1,11 @@
 import "./style.css";
 
-const Todo = () => {
-  return (
-    <div className="todobox">
+const Todo = (props) => {
 
+  return (
+    <div className="todo" >
+      {props.todo.title}
+      {props.todo.do}
     </div>
   );
 };
