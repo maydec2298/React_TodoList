@@ -1,11 +1,17 @@
+import React from 'react'
 import "./style.css";
 
-const Todo = (props) => {
+const Todo = ({todo}) => {
+  const {id, title, body, isDone} = todo;
 
+ 
   return (
-    <div className="todo" >
-      {props.todo.title}
-      {props.todo.do}
+    
+    <div className="todobox">
+      <div className="todotitle">{todo.title}</div>
+      <div className="todobody">{todo.body}</div>
+      <button className="button">삭제</button>
+      <button className="button">완료</button>
     </div>
   );
 };
