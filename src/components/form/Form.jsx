@@ -18,14 +18,17 @@ const Form = ({ todos, setTodos }) => {
   };
 
   const onclick = () => {
-    setTodos([...todos, { id: todos.length + 1, title: title, body: body, idDone: false }])
+    setTodos([...todos, { id: todos.length + 1, title: title, body: body, isDone: false }])
+    setTitle("")
+    setBody("")
   };
+
   return (
     <div className='form_container'>
 
       <div>제목<input type="text" className="form_input" onChange={onChangeHandler} value={title} /></div>
       <div>내용<input type="text" className="form_input" onChange={onChangeHandler2} value={body} /></div>
-      <input type="submit" className="button" onClick={onclick} value="추가하기"></input>
+      <input type="submit" className="button" onClick={onclick} value="ADD"></input>
 
 
 
@@ -45,7 +48,7 @@ const Form = ({ todos, setTodos }) => {
         })}; */}
 
 
-    </div>
+    </div >
   )
 };
 

@@ -15,10 +15,9 @@ const Todo = ({ todos, onRemove, onToggle }) => {
         <button className="button" onClick={() => onRemove(id)}>삭제</button>
         <button className="button" onClick={() => onToggle(id)}>
           {isDone ? "취소" : "완료"}</button>
-
-
-
       </div>
+
+
     </div>
   );
 };

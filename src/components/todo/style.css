@@ -6,16 +6,22 @@
   text-align: center;
   padding: 20px;
   margin: 20px;
+  font-family: 'Jua', sans-serif;
 
 }
 
-.todotitle {
-  margin-bottom: 20px;
+.todobox .todotitle {
+  margin: 10px 0;
   font-weight: bold;
   font-size: 30px;
 }
 
-.todobody {
-  margin-bottom: 20px;
+.todobox .todobody {
+  margin-bottom: 30px;
 
+}
+
+.todobox .button {
+  margin-top: 5px;
+  padding: 10px 15px;
 }

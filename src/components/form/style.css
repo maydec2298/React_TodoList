@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-around;
 
-  margin: 30px auto;
+  margin: 30px auto 50px auto;
   overflow: hidden;
-
-
+  font-family: 'Jua', sans-serif;
+  font-size: 17px;
 }
 
 .form_input {
@@ -16,10 +16,11 @@
 }
 
 .button {
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 0.5px solid #eee;
   background-color: blanchedalmond;
   cursor: pointer;
-  margin: 10px;
+  margin: 0 5px;
+  font-family: 'Jua', sans-serif;
 }

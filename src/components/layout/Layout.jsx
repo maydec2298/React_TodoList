@@ -30,6 +30,7 @@ const Layout = () => {
     );
   };
 
+  //삭제하기
   const onRemove = (id) => {
     setTodos(todos.filter((todos) => todos.id !== id));
   };
@@ -37,8 +38,9 @@ const Layout = () => {
   return (
     <div className="wrap">
       <Header />
-      <Form onClick={onclick} todos={todos} setTodos={setTodos} />
+      <Form todos={todos} setTodos={setTodos} />
       <List todos={todos} onRemove={onRemove} onToggle={onToggle} />
+
     </div>
   );
 };
