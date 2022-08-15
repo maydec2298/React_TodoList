@@ -1,17 +1,20 @@
 import React from 'react'
 import "./style.css";
 
-const Todo = ({todo}) => {
-  const {id, title, body, isDone} = todo;
+const Todo = ({ todos }) => {
+  const { id, title, body, isDone } = todos;
 
- 
+
   return (
-    
+
     <div className="todobox">
-      <div className="todotitle">{todo.title}</div>
-      <div className="todobody">{todo.body}</div>
+      <div className="todotitle">{todos.title}</div>
+      <div className="todobody">{todos.body}</div>
       <button className="button">삭제</button>
       <button className="button">완료</button>
+      {/* <DoneButton>
+        {checked ? 취소 : null}
+      </DoneButton> */}
     </div>
   );
 };

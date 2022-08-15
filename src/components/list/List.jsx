@@ -2,22 +2,24 @@ import React from 'react'
 import "./style.css"
 import Todo from "../todo/Todo";
 
-const List = ({todo}) => {
+const List = ({ todos }) => {
   return (
     <div className="list">
-      <h2>Working</h2>
+      <div>
+        <h2>Working</h2>
+      </div>
+      {todos.map((todos) => {
+        return (
 
-      {todo.map((todo) => {
-        return(
-      <Todo 
-      todo ={todo}
-      key = {todo.id}
-      />
+          < Todo
+            todos={todos}
+            key={todos.id}
+          />
         )
       })}
-     
-      
-<h2>Done</h2>
+
+
+      <h2>Done</h2>
 
     </div>
   );
