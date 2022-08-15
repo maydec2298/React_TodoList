@@ -1,9 +1,18 @@
 .list {
-  width: 100%;
-
+  max-width: 1200px;
+  min-width: 800px;
 }
 
 .todos {
-
+  max-width: 1200px;
+  min-width: 800px;
   display: flex;
+  flex-wrap: nowrap;
+}
+
+.todosdone {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: line-through;
+
 }

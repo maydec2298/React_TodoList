@@ -28,7 +28,7 @@ const List = ({ todos, onRemove, onToggle }) => {
 
       </div>
       <h2>Done🎉</h2>
-      <div className='todos'>
+      <div className='todosdone'>
         {todos.map((todos) => {
           if (todos.isDone === true) {
             return (
