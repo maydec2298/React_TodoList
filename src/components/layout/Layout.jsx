@@ -9,14 +9,14 @@ const Layout = () => {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      title: "운동",
-      body: "플랭크하기",
+      title: "코딩",
+      body: "리액트 공부하기",
       isDone: false
 
     }
   ]);
 
-
+  //완료 취소 버튼
   const onToggle = (id) => {
     setTodos(
       todos.map((todo) => {
